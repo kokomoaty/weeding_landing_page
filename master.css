@@ -149,14 +149,13 @@ nav a:hover {
     font-weight: 500;
 }
 .data{
-    height: 60vh;
     background-color: #ffdddd;
     display: flex;
     flex-direction: column;
     text-align: center;
     align-items: center;
     margin: auto;
-    padding-top: 160px;
+    padding: 160px 0;
 }
 .data h1,h3,button{
     margin: 10px 0;
