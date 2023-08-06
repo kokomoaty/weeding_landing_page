@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&family=Raleway:ital,wght@0,500;1,300&display=swap');
+
+html{
+    scroll-behavior: smooth;
+}
+*{
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Outfit', sans-serif;
+    font-family: 'Raleway', sans-serif;
+}
+#home{
+    background-image:url(imgs/nathan-dumlao-5BB_atDT4oA-unsplash.jpg);
+    position: relative;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center;
+}
+.words{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-transform: capitalize;
+    font-size: 1.5rem;
+    color: rgba(255, 255, 255, 0.815);
+    text-align: center;
+}
+.words h1{
+    margin: 11px,0;
+    letter-spacing: 4px;
+}.words h2{
+    line-height: 1.5;
+    margin: 11px,0;
+    font-weight:100;
+}
+.words h3{
+    margin: 11px,0;
+}
+nav{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    height: 50px;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.336);
+    overflow: hidden;
+    position: fixed;
+    bottom: 0;
+    z-index: 100;
+}
+nav a{
+    display: block;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: black;
+    font-weight: 400;
+}
+nav a:hover {
+    background-color: #ddd;
+}
+.contain{
+    color:black;
+    background-color: #fde4e4b9;
+    display: flex;
+    flex-direction: column;
+    gap: 70px;
+    align-items: center;
+    padding: 70px 0;
+}
+.contain h1 ,.all h1{
+    text-transform: capitalize;
+    font-size: 1.7rem;
+}
+.img , .place{
+    width:70%;
+}
+.contain p{
+    width:70%;
+    line-height: 2;
+    font-style: italic;
+}
+.contain button{
+    width: 210px;
+    font-size: 1.3rem;
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    vertical-align: middle;
+    text-align: center;
+    text-transform: capitalize;
+    margin-bottom: 50px;
+}
+.contain button:hover{
+    background-color: gray;
+    cursor: pointer;
+}
+#flower{
+    background-image: url(imgs/flowrs.jpg);
+    position: relative;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+.invite{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-transform: capitalize;
+    font-size: 1.5rem;
+    color: rgba(255, 255, 255, 0.897);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 41px;
+    font-weight: 300;
+}
+.invite h1{
+    font-size: 3rem;
+    letter-spacing: 4px;
+}
+.all{
+    display: flex;
+    flex-direction: column;
+    color: #000000a8;
+    background-color: #fde4e4b9;
+    gap: 70px;
+    align-items: center;
+    padding: 70px 0;
+}
+.details{
+    width: 70%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    text-transform: capitalize;
+    text-align: center;
+    line-height: 1.5;
+    font-weight: 300;
+}
+.details div *{
+    margin: 10px 0;
+}
+.details div h2{
+    font-size: 3em;
+    font-weight: 500;
+}
+.data{
+    height: 60vh;
+    background-color: #ffdddd;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    margin: auto;
+    padding-top: 160px;
+}
+.data h1,h3,button{
+    margin: 10px 0;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
+.data h3{
+    text-transform: capitalize;
+}
+.data button{
+    height: 71px;
+    width: 200px;
+    font-size: 1.7rem;
+    color: white;
+    background-color: #f86359;
+    border: none;
+    border-radius: 4px;
+}
+.name{
+    width:100%;
+    height: 70px;
+    color: white;
+    background-color: black;
+    text-align: center;
+    font-size: 1.1rem;
+    line-height: 1.5;
+    padding-top: 5px;
+}
+
+@media screen and (max-width:768px){
+    nav{
+        display: none;
+    }
+    .img , .place{
+        width:100%;
+    }
+    .details{
+        flex-direction: column;
+    }
+    .data{
+        padding: 50px 0;
+    }
+}
+
